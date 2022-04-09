@@ -1,0 +1,494 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+html {
+    background-color: beige;
+}
+
+header h1 {
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 3.5rem;
+    margin: 20px 10px;
+
+}
+
+.navegacion {
+    background-color: rgba(230, 230, 198, 0.884);
+    border: solid 1px black;
+    position: sticky;
+    top: 0rem;
+}
+
+.menu li a {
+    text-decoration: none;
+}
+
+.menu li {
+    font-size: 3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: inline-block;
+    padding: 2.5rem 7rem;
+    height: 100%;
+
+}
+
+article {
+    display: block;
+}
+
+article p {
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: oblique;
+    text-align: justify;
+}
+
+.imagenInicio {
+    float: right;
+    padding-left: 15rem;
+}
+
+footer {
+    background-color: rgba(247, 247, 205, 0.699);
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    font-style: oblique;
+    padding: 4rem;
+}
+
+.vinculo {
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.ingresoContacto {
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: block;
+}
+
+.quiero {
+    padding: 20rem;
+}
+
+/*.......................GRID INICIO......................*/
+.gridInicio {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: 0.1fr 0.1fr 1fr 0.1fr;
+    gap: 13px 3px;
+    grid-template-areas:
+        "titulo titulo "
+        "nav nav"
+        "arti img"
+        "footer footer";
+}
+
+.titulo {
+    grid-area: titulo;
+}
+
+.navegacion {
+    grid-area: nav;
+}
+
+.articulo {
+    grid-area: arti;
+    align-items: center;
+}
+
+.imagenInicio {
+    grid-area: img;
+}
+
+footer {
+    grid-area: footer;
+}
+
+/*.........................GRID QUE ES............*/
+
+.gridQueEs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.1fr 0.1fr 1fr 1fr 0.1fr;
+
+    grid-template-areas:
+        "titulo titulo"
+        "nav nav"
+        "articulo1 imagen"
+        "imagen2 articulo2"
+        "footer footer";
+    gap: 13px 3px;
+}
+
+.menu {
+    grid-area: nav;
+}
+
+.titulo {
+    justify-self: center;
+    grid-area: titulo;
+}
+
+.articuloUno {
+    grid-area: articulo1;
+}
+
+.imagen1 {
+    grid-area: imagen;
+    justify-self: center;
+}
+
+.imagen2 {
+    grid-area: imagen2;
+    justify-self: center;
+}
+
+.articuloDos {
+    grid-area: articulo2;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+/*----------------GRID PREVENCION-------------*/
+.gridPrevencion {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+    grid-template-rows: 0.1fr 0.1fr 1fr 1fr 0.1fr;
+    grid-template-areas:
+        "titulo titulo"
+        "nav nav"
+        "articulo3 imagen1"
+        "imagen2 imagen2"
+        "footer footer";
+    gap: 13px 13px;
+}
+
+.titulo {
+    justify-self: end;
+    grid-area: titulo;
+}
+
+.menu {
+    grid-area: nav;
+}
+
+.articuloTres {
+    grid-area: articulo3;
+}
+
+.imagenTres {
+    grid-area: imagen1;
+    justify-self: center;
+}
+
+.imagenCuatro {
+    grid-area: imagen2;
+    justify-self: center;
+}
+
+/*------------------GRID NO ESTAS SOLA-------------*/
+.gridNoEstasSola {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.1fr 0.1fr 1fr 0.5fr 0.5fr 0.1fr;
+    grid-template-areas:
+        "titulo titulo"
+        "nav nav"
+        "articulo1 imagen"
+        "imagen2 articulo2"
+        "video video"
+        "footer footer";
+    gap: 13px 13px;
+}
+
+.menu {
+    grid-area: nav;
+}
+
+.titulo {
+    justify-self: center;
+    grid-area: titulo;
+}
+
+.articuloCuatro {
+    grid-area: articulo1;
+}
+
+.imagenCinco {
+    grid-area: imagen;
+    justify-self: center;
+}
+
+.imagenSeis {
+    grid-area: imagen2;
+    justify-self: center;
+}
+
+.articuloCinco {
+    grid-area: articulo2;
+    justify-self: center;
+}
+
+iframe {
+    grid-area: video;
+    justify-self: center;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+/*------------------GRID CONTACTO-------------*/
+.gridContacto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.1fr 0.1fr 1fr 0.5fr 0.5fr 0.3fr;
+    grid-template-areas:
+        "titulo titulo"
+        "nav nav"
+        "formulario imagen"
+        ". ."
+        "video video"
+        "footer footer";
+    gap: 13px 13px;
+}
+
+.titulo {
+    justify-self: center;
+    grid-area: titulo;
+}
+
+.menu {
+    grid-area: nav;
+}
+
+.ingresoContacto {
+    grid-area: formulario;
+}
+
+.imagenContacto {
+    grid-area: imagen;
+}
+
+/*------VISTA TABLET INICIO-----*/
+@media screen and (max-width: 768px) {
+    .gridInicio {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr 0.1fr 0.5fr 4fr 0.1fr;
+        gap: 10px 5px;
+        grid-template-areas:
+            "titulo "
+            "nav"
+            "arti"
+            "imagen"
+            "footer";
+    }
+
+    .navegacion {
+        background-color: rgb(184, 178, 127);
+    }
+
+    .menu li {
+        font-size: 2rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        display: inline-block;
+        padding: 2rem 3rem;
+        height: 100%;
+    }
+
+    .articulo {
+        grid-area: arti;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .imagenInicio {
+        grid-area: imagen;
+        width: auto;
+        height: auto;
+        float: center;
+        padding-left: 1rem;
+    }
+
+    footer {
+        grid-area: footer;
+        background-color: rgb(184, 178, 127);
+
+    }
+}
+
+/*------VISTA CELULAR INICIO-----*/
+@media screen and (max-width: 480px) {
+
+    .navegacion {
+        background-color: rgb(184, 178, 127);
+    }
+
+    footer {
+        background-color: rgb(184, 178, 127);
+
+    }
+}
+
+/*------VISTA TABLET QUE ES-----*/
+@media screen and (max-width: 768px) {
+    .gridQueEs {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr 0.1fr 1fr 0.5fr 0.7fr 1fr 0.1fr;
+        gap: 10px 5px;
+        grid-template-areas:
+            "titulo "
+            "nav"
+            "articulo1"
+            "imagen"
+            "articulo2"
+            "imagen2"
+            "footer";
+    }
+
+    .navegacion {
+        background-color: rgb(184, 178, 127);
+    }
+
+    .menu li {
+        font-size: 1.9rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        display: inline-block;
+        padding: 2rem 3rem;
+        height: 100%;
+    }
+
+}
+
+/*------VISTA CELULAR QUE ES-----*/
+@media screen and (max-width: 480px) {
+
+    .navegacion {
+        background-color: rgb(184, 178, 127);
+    }
+
+    .menu li {
+        font-size: 1.2rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        display: inline-block;
+        padding: 2rem 3rem;
+        height: 100%;
+    }
+
+
+}
+
+/*------VISTA TABLET PREVENCION-----*/
+@media screen and (max-width: 768px) {
+    .gridPrevencion {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr 0.1fr 0.5fr 0.5fr 0.5fr 0.1fr;
+        gap: 10px 5px;
+        grid-template-areas:
+            "titulo "
+            "nav"
+            "imagen1"
+            "articulo3"
+            "imagen2"
+            "footer";
+    }
+
+    .navegacion {
+        background-color: rgb(184, 178, 127);
+    }
+
+    .menu li {
+        font-size: 1.9rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        display: inline-block;
+        padding: 2rem 3rem;
+        height: 100%;
+    }
+
+
+}
+
+/*------VISTA CELULAR PREVENCION-----*/
+@media screen and (max-width: 480px) {
+
+    .navegacion {
+        background-color: rgb(184, 178, 127);
+    }
+
+    .menu li {
+        font-size: 1.2rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        display: inline-block;
+        padding: 2rem 3rem;
+        height: 100%;
+    }
+
+   
+
+}
+/*------VISTA TABLET NO ESTAS SOLA-----*/
+@media screen and (max-width: 768px) {
+    .gridNoEstasSola {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr 0.1fr 0.5fr 0.5fr 0.5fr 0.5fr 0.3fr 0.1fr;
+        gap: 10px 10px;
+        grid-template-areas:
+            "titulo "
+            "nav"
+            "video"
+            "articulo1"
+            "imagen"
+            "articulo2"
+            "imagen2"
+            "footer";
+    }
+
+    .navegacion {
+        background-color: rgb(184, 178, 127);
+    }
+
+    .menu li {
+        font-size: 1.9rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        display: inline-block;
+        padding: 2rem 3rem;
+        height: 100%;
+    }
+}
+
+/*------VISTA CELULAR NO ESTAS SOLA-----*/
+@media screen and (max-width: 480px) {
+
+    .navegacion {
+        background-color: rgb(184, 178, 127);
+    }
+
+    .menu li {
+        font-size: 1.2rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        display: inline-block;
+        padding: 2rem 3rem;
+        height: 100%;
+    }
+}
