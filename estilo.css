@@ -94,6 +94,7 @@ footer {
     padding: 20rem;
 }
 
+/*
 /*.......................GRID INICIO......................*/
 .gridInicio {
     display: grid;
@@ -295,6 +296,7 @@ iframe {
 .imagenContacto {
     grid-area: imagen;
 }
+
 
 /*------VISTA TABLET INICIO-----*/
 @media screen and (max-width: 768px) {
