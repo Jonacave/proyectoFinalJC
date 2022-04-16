@@ -21,7 +21,7 @@ header h1 {
     text-align: center;
     font-size: 3.5rem;
     margin: 20px 10px;
-
+    background-color: beige;
 }
 
 .navegacion {
@@ -55,6 +55,7 @@ header h1 {
 
 article {
     display: block;
+    background-color: beige;
 }
 
 article p {
@@ -67,6 +68,7 @@ article p {
 .imagenInicio {
     float: right;
     padding-left: 15rem;
+    background-color: beige;
 }
 
 footer {
@@ -82,16 +84,19 @@ footer {
 .vinculo {
     font-size: 2rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: beige;
 }
 
 .ingresoContacto {
     font-size: 2rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: block;
+    background-color: beige;
 }
 
 .quiero {
     padding: 20rem;
+    background-color: beige;
 }
 
 /*
@@ -503,4 +508,21 @@ iframe {
         padding: 2rem 3rem;
         height: 100%;
     }
+}
+
+
+img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+
+}
+
+body {
+    background-color: beige;
+}
+.espacioFila{
+    width: 100%;
+    height: 2rem;
 }
