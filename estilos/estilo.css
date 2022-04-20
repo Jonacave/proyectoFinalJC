@@ -30,7 +30,7 @@ header h1 {
     position: sticky;
     top: 0rem;
 }
-
+/*
 .menu li a {
     text-decoration: none;
     color: black;
@@ -64,7 +64,7 @@ article p {
     font-style: oblique;
     text-align: justify;
 }
-
+*/
 .imagenInicio {
     float: right;
     padding-left: 15rem;
