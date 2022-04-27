@@ -1,8 +1,31 @@
+/*MAP GET*/
+.articulo {
+  font-family: Verdana;
+  font-size: 2rem;
+  text-align: justify; }
+
+/*EXTEND*/
+.prueba, .prueba--footer {
+  font-family: Verdana, Geneva, Tahoma, sans-serif; }
+
+.prueba--footer {
+  width: 100%;
+  font-size: 2rem;
+  text-align: center;
+  font-style: oblique;
+  padding: 4rem;
+  background: linear-gradient(beige 13%, #8c8047 99%); }
+
+/*MIXINS*/
+article {
+  background-color: beige; }
+
 .menu li {
   font-size: 3rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   display: inline-block;
-  padding: 2.5rem 7rem;
+  text-align: center;
+  padding: 2rem 7rem;
   height: 100%;
   transition: all 1s; }
   .menu li:hover {

@@ -1,3 +1,39 @@
 $colorFondo: beige;
-$colorMenu:  rgba(230, 230, 198, 0.884);
+$colorMenu: rgba(230, 230, 198, 0.884);
 $tamanoFuente: 3rem;
+
+$texto: (tipopLetra: Verdana,
+    tamanoLetra: 2rem,
+    alineacion: justify
+);
+
+
+/*MAP GET*/
+.articulo {
+    font-family: map-get($texto, tipopLetra);
+    font-size: map-get($texto, tamanoLetra);
+    text-align: map-get($texto, alineacion);
+
+
+} 
+/*EXTEND*/
+.prueba{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;   
+}
+.prueba--footer{
+    @extend .prueba;
+    width: 100%;
+    font-size: 2rem;
+    text-align: center;
+    font-style: oblique;
+    padding: 4rem;
+    background: linear-gradient(beige 13%, rgba(140, 128, 71, 1) 99%);
+}
+
+/*MIXINS*/
+@mixin fondo ($beige) {
+    background-color: $beige;    
+}
+article{
+    @include fondo(beige);
+}
