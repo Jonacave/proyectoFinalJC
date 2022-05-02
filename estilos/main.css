@@ -20,21 +20,47 @@
 article {
   background-color: beige; }
 
-.menu li {
-  font-size: 3rem;
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  overflow-x: hidden; }
+
+html {
+  font-size: 62.5%; }
+
+html {
+  background-color: beige; }
+
+header h1 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  display: inline-block;
   text-align: center;
-  padding: 2rem 7rem;
-  height: 100%;
-  transition: all 1s; }
-  .menu li:hover {
-    transform: scale(1.3); }
-  .menu li a {
-    text-decoration: none;
-    color: black; }
-    .menu li a:focus {
-      color: #d8b218; }
+  font-size: 3.5rem;
+  margin: 20px 10px;
+  background-color: beige; }
+
+.navegacion {
+  background-color: rgba(230, 230, 198, 0.884);
+  border: solid 1px black;
+  position: sticky;
+  text-align: center;
+  top: 0rem; }
+  .navegacion .menu li {
+    display: flex;
+    display: inline-block;
+    font-size: 3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 1% 1.4%;
+    height: 100%;
+    transition: all 1s; }
+    .navegacion .menu li:hover {
+      transform: scale(1.3); }
+    .navegacion .menu li a {
+      text-decoration: none;
+      color: black; }
+      .navegacion .menu li a:focus {
+        color: #d8b218; }
 
 article {
   display: block;
@@ -44,3 +70,37 @@ article {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-style: oblique;
     text-align: justify; }
+
+.ingresoContacto {
+  font-size: 2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: block;
+  background-color: beige; }
+
+.imagenInicio {
+  float: right;
+  padding-left: 15rem;
+  background-color: beige; }
+
+img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: auto; }
+
+body {
+  background-color: beige; }
+
+.espacioFila {
+  width: 100%;
+  height: 2rem; }
+
+footer {
+  width: 100%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  font-style: oblique;
+  padding: 4rem;
+  background: linear-gradient(beige 13%, #8c8047 99%);
+  height: 100%; }

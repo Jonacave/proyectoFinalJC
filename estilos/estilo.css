@@ -1,3 +1,5 @@
+
+/*
 * {
     margin: 0;
     padding: 0;
@@ -47,26 +49,26 @@ footer {
     padding: 4rem;
     background: linear-gradient(beige 13%, rgba(140, 128, 71, 1) 99%);
 }
-/*
+
 .vinculo {
     font-size: 2rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: beige;
-}*/
+    background-color: rgb(144, 4, 4);
+}
 
 .ingresoContacto {
     font-size: 2rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: block;
     background-color: beige;
-}
+
 /*
 .quiero {
     padding: 20rem;
     background-color: beige;
 }*/
     /*.......................GRID INICIO......................*/
-    .gridInicio {
+/* .gridInicio {
         display: grid;
         grid-template-columns: 0.5fr 1fr;
         grid-template-rows: 0.1fr 0.1fr 1fr 0.1fr;
@@ -99,7 +101,7 @@ footer {
         grid-area: footer;
     }
 
-    /*.........................GRID QUE ES............*/
+    /*.........................GRID QUE ES............
 
     .gridQueEs {
         display: grid;
@@ -146,7 +148,7 @@ footer {
         grid-area: footer;
     }
 
-    /*----------------GRID PREVENCION-------------*/
+    /*----------------GRID PREVENCION-------------
     .gridPrevencion {
         display: grid;
         grid-template-columns: 1fr 0.5fr;
@@ -183,7 +185,7 @@ footer {
         justify-self: center;
     }
 
-    /*------------------GRID NO ESTAS SOLA-------------*/
+    /*------------------GRID NO ESTAS SOLA-------------
     .gridNoEstasSola {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -235,7 +237,7 @@ footer {
         grid-area: footer;
     }
 
-    /*------------------GRID CONTACTO-------------*/
+    /*------------------GRID CONTACTO-------------
     .gridContacto {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -267,8 +269,8 @@ footer {
         grid-area: imagen;
     }
 
-
-    /*------VISTA TABLET INICIO-----*/
+*/
+    /*------VISTA TABLET INICIO-----
     @media screen and (max-width: 768px) {
         .gridInicio {
             display: grid;
@@ -316,7 +318,7 @@ footer {
         }
     }
 
-    /*------VISTA CELULAR INICIO-----*/
+    /*------VISTA CELULAR INICIO-----
     @media screen and (max-width: 480px) {
 
         .navegacion {
@@ -329,7 +331,7 @@ footer {
         }
     }
 
-    /*------VISTA TABLET QUE ES-----*/
+    /*------VISTA TABLET QUE ES-----
     @media screen and (max-width: 768px) {
         .gridQueEs {
             display: grid;
@@ -360,7 +362,7 @@ footer {
 
     }
 
-    /*------VISTA CELULAR QUE ES-----*/
+    /*------VISTA CELULAR QUE ES-----
     @media screen and (max-width: 480px) {
 
         .navegacion {
@@ -378,7 +380,7 @@ footer {
 
     }
 
-    /*------VISTA TABLET PREVENCION-----*/
+    /*------VISTA TABLET PREVENCION-----
     @media screen and (max-width: 768px) {
         .gridPrevencion {
             display: grid;
@@ -409,7 +411,7 @@ footer {
 
     }
 
-    /*------VISTA CELULAR PREVENCION-----*/
+    /*------VISTA CELULAR PREVENCION-----
     @media screen and (max-width: 480px) {
 
         .navegacion {
@@ -427,8 +429,7 @@ footer {
 
 
     }
-
-    /*------VISTA TABLET NO ESTAS SOLA-----*/
+    ------VISTA TABLET NO ESTAS SOLA-----
     @media screen and (max-width: 768px) {
         .gridNoEstasSola {
             display: grid;
@@ -459,7 +460,7 @@ footer {
         }
     }
 
-    /*------VISTA CELULAR NO ESTAS SOLA-----*/
+    /*------VISTA CELULAR NO ESTAS SOLA-----
     @media screen and (max-width: 480px) {
 
         .navegacion {
@@ -492,3 +493,5 @@ footer {
         width: 100%;
         height: 2rem;
     }
+
+*/

@@ -4,34 +4,112 @@
 @import "prevencion";
 @import "noestassola";
 
-.menu li {
-    font-size: $tamanoFuente;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    display: inline-block;
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+html {
+    background-color: $colorFondo;
+}
+
+header h1 {
+
+    font-family: $tipoFuente;
     text-align: center;
-    padding: 2rem 7rem;
-    height: 100%;
-    transition: all 1s;
-    &:hover {
-        transform: scale(1.3);
-    }
-    a {
-        text-decoration: none;
-        color: black;
-        &:focus {
-            color: rgb(216, 178, 24); 
+    font-size: 3.5rem;
+    margin: 20px 10px;
+    background-color: beige;
+}
+
+.navegacion {
+    background-color: rgba(230, 230, 198, 0.884);
+    border: solid 1px black;
+    position: sticky;
+    text-align: center;
+    top: 0rem;
+
+    .menu li {
+        display: flex;
+        display: inline-block;
+        font-size: $tamanoFuenteMenu;
+        font-family: $tipoFuente;
+        padding: 1% 1.4%;
+        height: 100%;
+        transition: all 1s;
+
+        &:hover {
+            transform: scale(1.3);
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+
+            &:focus {
+                color: rgb(216, 178, 24);
+            }
         }
     }
 }
 
-
 article {
     display: block;
     background-color: $colorFondo;
+
     p {
-        font-size: 2rem;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: $tamanoParrafo;
+        font-family: $tipoFuente;
         font-style: oblique;
         text-align: justify;
     }
+}
+
+.ingresoContacto {
+    font-size: $tamanoParrafo;
+    font-family: $tipoFuente;
+    display: block;
+    background-color: $colorFondo;
+}
+
+.imagenInicio {
+    float: right;
+    padding-left: 15rem;
+    background-color: $colorFondo;
+}
+
+img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: auto;
+
+}
+
+body {
+    background-color: $colorFondo;
+}
+
+.espacioFila {
+    width: 100%;
+    height: 2rem;
+}
+
+footer {
+    width: 100%;
+    font-family: $tipoFuente;
+    font-size: $tamanoParrafo;
+    text-align: center;
+    font-style: oblique;
+    padding: 4rem;
+    background: linear-gradient(beige 13%, rgba(140, 128, 71, 1) 99%);
+    height: 100%;
 }
