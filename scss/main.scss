@@ -11,6 +11,9 @@
 
 body {
     overflow-x: hidden;
+    position: relative;
+    padding-bottom: 3rem;
+    min-height: 100vh;
 }
 
 html {
@@ -22,12 +25,10 @@ html {
 }
 
 header h1 {
-
-    font-family: $tipoFuente;
+    font-family: $tipoFuente strong;
     text-align: center;
-    font-size: 3.5rem;
+    font-size: 4rem;
     margin: 20px 10px;
-    background-color: beige;
 }
 
 .navegacion {
@@ -35,6 +36,7 @@ header h1 {
     border: solid 1px black;
     position: sticky;
     text-align: center;
+    justify-content: space-between;
     top: 0rem;
 
     .menu li {
@@ -80,13 +82,14 @@ article {
     background-color: $colorFondo;
 }
 
-.imagenInicio {
-    float: right;
-    padding-left: 15rem;
-    background-color: $colorFondo;
-}
+div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: auto;
 
-img {
+}
+.articulo {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -103,13 +106,50 @@ body {
     height: 2rem;
 }
 
+label {
+    display: block;
+
+}
+
+input {
+    padding: 0.5rem;
+    margin: 1rem;
+
+}
+
+.imagenInicioDos {
+    height: 50rem;
+    width: 130rem;
+}
+
+
+.imagenCinco {
+    width: 70%;
+    height: 80%;
+}
+
+.imagenContacto{
+    width: 70%;
+    height: 70%;
+}
+.imagenContactoDos{
+    width: 90%;
+    height: 70%;
+}
+
+.imagenDedicatoria{
+        width: 5%;
+    height: 5%;
+}
+
 footer {
-    width: 100%;
     font-family: $tipoFuente;
     font-size: $tamanoParrafo;
     text-align: center;
     font-style: oblique;
     padding: 4rem;
     background: linear-gradient(beige 13%, rgba(140, 128, 71, 1) 99%);
-    height: 100%;
+    width: 100%;
+    position: relative;
+    bottom: 0;
 }

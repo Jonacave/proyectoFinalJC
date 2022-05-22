@@ -25,7 +25,10 @@ article {
   padding: 0; }
 
 body {
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  position: relative;
+  padding-bottom: 3rem;
+  min-height: 100vh; }
 
 html {
   font-size: 62.5%; }
@@ -34,17 +37,17 @@ html {
   background-color: beige; }
 
 header h1 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif strong;
   text-align: center;
-  font-size: 3.5rem;
-  margin: 20px 10px;
-  background-color: beige; }
+  font-size: 4rem;
+  margin: 20px 10px; }
 
 .navegacion {
   background-color: rgba(230, 230, 198, 0.884);
   border: solid 1px black;
   position: sticky;
   text-align: center;
+  justify-content: space-between;
   top: 0rem; }
   .navegacion .menu li {
     display: flex;
@@ -77,12 +80,13 @@ article {
   display: block;
   background-color: beige; }
 
-.imagenInicio {
-  float: right;
-  padding-left: 15rem;
-  background-color: beige; }
+div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: auto; }
 
-img {
+.articulo {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -95,12 +99,40 @@ body {
   width: 100%;
   height: 2rem; }
 
+label {
+  display: block; }
+
+input {
+  padding: 0.5rem;
+  margin: 1rem; }
+
+.imagenInicioDos {
+  height: 50rem;
+  width: 130rem; }
+
+.imagenCinco {
+  width: 70%;
+  height: 80%; }
+
+.imagenContacto {
+  width: 70%;
+  height: 70%; }
+
+.imagenContactoDos {
+  width: 90%;
+  height: 70%; }
+
+.imagenDedicatoria {
+  width: 5%;
+  height: 5%; }
+
 footer {
-  width: 100%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 2rem;
   text-align: center;
   font-style: oblique;
   padding: 4rem;
   background: linear-gradient(beige 13%, #8c8047 99%);
-  height: 100%; }
+  width: 100%;
+  position: relative;
+  bottom: 0; }
